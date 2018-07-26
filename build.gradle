@@ -1,0 +1,25 @@
+
+buildscript {
+  ext.kotlin_version = '1.2.41'
+
+  repositories {
+    jcenter()
+  }
+
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  }
+}
+
+apply plugin: "application"
+apply plugin: "kotlin"
+
+mainClassName = 'HelloWorldKt'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
